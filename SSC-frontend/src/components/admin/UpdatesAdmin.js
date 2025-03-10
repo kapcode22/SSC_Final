@@ -24,7 +24,7 @@ const UpdatesAdmin = () => {
         formData.append('image', image);
 
         try {
-            const res = await axios.post('http://localhost:5000/api/services', formData, {
+            const res = await axios.post('https://ssc-final-backend.onrender.com/api/services', formData, {
                 headers: {
                     'authorization': localStorage.getItem('token'),
                     'Content-Type': 'multipart/form-data'
