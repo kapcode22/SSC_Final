@@ -32,7 +32,7 @@ const Navbar = () => {
   // ✅ Logout Function
   const handleLogout = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/admin/logout", {
+      const response = await axios.get("https://ssc-final-backend.onrender.com/api/admin/logout", {
         withCredentials: true,
       });
 
