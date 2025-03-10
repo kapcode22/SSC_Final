@@ -15,7 +15,7 @@ const AddAdmin = () => {
         const adminData = { username, password, status, type };
 
         try {
-            const res = await axios.post('http://localhost:5000/admin/add', adminData);
+            const res = await axios.post('https://ssc-final-backend.onrender.com/admin/add', adminData);
             console.log(res.data);
             toast.success("Admin Added Successfully!");
         } catch (err) {
