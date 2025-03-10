@@ -26,10 +26,12 @@ mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('MongoDB connected successfully'))
     .catch(err => console.error('MongoDB connection error:', err));
 
-    app.use(cors({
-        origin: "http://localhost:3000",  // ✅ Allow frontend origin
-        credentials: true  // ✅ Allow cookies and authentication headers
-    }));
+   app.use(
+  cors({
+    origin: ["http://localhost:3000", "https://ssc-final-frontend.onrender.com"],
+    credentials: true,
+  })
+);
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use('/uploads', express.static('uploads'));
