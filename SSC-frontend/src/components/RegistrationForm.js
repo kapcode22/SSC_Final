@@ -30,7 +30,7 @@ const RegistrationForm = () => {
     //try-catch block
     try {
       // api api requset based on paremeter 
-      await axios.post(`http://localhost:5000/api/registration/${club}/${event}`, formData);
+      await axios.post(`https://ssc-final-backend.onrender.com/api/registration/${club}/${event}`, formData);
       alert('Registration successful!');
     } catch (err) {
       console.error('Error registering:', err);
