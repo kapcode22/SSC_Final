@@ -24,10 +24,10 @@ const SliderImagesAdmin = () => {
         formData.append('image', values.image);
 
         const endpoints = {
-            spc: 'http://localhost:5000/api/sliderImages/spc',
-            ku: 'http://localhost:5000/api/sliderImages/ku',
-            hhc: 'http://localhost:5000/api/sliderImages/hhc',
-            sahyog: 'http://localhost:5000/api/sliderImages/sahyog',
+            spc: 'https://ssc-final-backend.onrender.com/api/sliderImages/spc',
+            ku: 'https://ssc-final-backend.onrender.com/api/sliderImages/ku',
+            hhc: 'https://ssc-final-backend.onrender.com/api/sliderImages/hhc',
+            sahyog: 'https://ssc-final-backend.onrender.com/api/sliderImages/sahyog',
         };
 
         const endpoint = endpoints[values.club];
