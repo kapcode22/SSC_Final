@@ -1,0 +1,58 @@
+.registrationForm {
+  background-image: url('D:\SSC_copy\SSC-frontend\src\images\home.jpg'); /* Replace with your image URL */
+  background-size: cover; /* Ensure the background image covers the entire form */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent repeating the background image *//* White with 80% opacity */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    max-height: 800px;
+    margin: 50px auto;
+    backdrop-filter: blur(10px); /* Adds a blur effect to the background */
+  }
+  .heading {
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10px; /* Space below the heading */
+   
+    font-size: 1rem; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+    border-bottom: 2px solid #4CAF50; /* Green border below heading */
+    padding-bottom: 10px; /* Space between heading and border */
+  }
+  .registrationForm h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333; /* Dark grey color */
+  }
+  
+  .registrationForm form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .registrationForm input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 3px solid #0e0202;
+    border-radius: 5px;
+    font-size: 16px;
+    opacity: 0.6;
+  }
+  
+  .registrationForm button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .registrationForm button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  

@@ -1,0 +1,44 @@
+.admin-card {
+    background-color: #f3e5f5; /* Light purple background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.input-admin {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #d1c4e9; /* Light purple border */
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-admin:focus {
+    border-color: #9575cd; /* Medium purple border on focus */
+    box-shadow: 0 0 5px #9575cd; /* Medium purple shadow on focus */
+}
+
+.add-btn {
+    background-color: #7e57c2; /* Medium purple background */
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background-color: #673ab7; /* Darker purple background on hover */
+}
+
+.heading {
+    font-size: 24px;
+    color: #5e35b1; /* Dark purple color */
+    margin-bottom: 20px;
+}
