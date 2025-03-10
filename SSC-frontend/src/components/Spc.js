@@ -24,7 +24,7 @@ const Club = () => {
 
   const fetchCarouselImages = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/sliderImages/spc');
+      const response = await axios.get('https://ssc-final-backend.onrender.com/api/sliderImages/spc');
       setCarouselImages(response.data); // Assuming response.data is an array of image URLs
     } catch (error) {
       console.error('Error fetching carousel images:', error);
@@ -49,7 +49,7 @@ const Club = () => {
             {carouselImages && carouselImages.length > 0 ? (
               carouselImages.map((carouselimage, index) => (
                 <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
-                  <img src={`http://localhost:5000/${carouselimage.imageUrl.replace(/\\/g, '/')}`} alt="" />
+                  <img src={`https://ssc-final-backend.onrender.com/${carouselimage.imageUrl.replace(/\\/g, '/')}`} alt="" />
                 </div>
               ))
             ) : (
@@ -103,7 +103,7 @@ const Club = () => {
                 </button>
               </div>
             </div>
-            <img className={styles.img_ani} src={`http://localhost:5000/${event.image.replace(/\\/g, '/')}`} alt="" />
+            <img className={styles.img_ani} src={`https://ssc-final-backend.onrender.com/${event.image.replace(/\\/g, '/')}`} alt="" />
             <div className={styles.date}></div>
           </div>
         ))}
@@ -115,7 +115,7 @@ const Club = () => {
           {team.map((member, index) => (
             <div className={styles.profile_card} key={index}>
               <div className={styles.img}>
-                <img src={`http://localhost:5000/${member.image.replace(/\\/g, '/')}`} alt="" />
+                <img src={`https://ssc-final-backend.onrender.com/${member.image.replace(/\\/g, '/')}`} alt="" />
               </div>
               <div className={styles.caption}>
                 <h3>{member.name}</h3>
