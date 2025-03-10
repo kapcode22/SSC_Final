@@ -14,7 +14,7 @@ const ListAdmin = () => {
     }, [navigate]);
 
     useEffect(() => {
-        axios.get('http://localhost:5000/admin/admins')
+        axios.get('https://ssc-final-backend.onrender.com/admin/admins')
             .then((res) => {
                 console.log(res.data);
                 setAdmins(res.data.data);
