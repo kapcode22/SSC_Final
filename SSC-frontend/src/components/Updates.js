@@ -34,8 +34,8 @@ const Updates = () => {
                         .map((serviceItem, serviceIndex) => {
                             return (
                                 <div key={serviceIndex + 1} className="card">        
-                                    <img width="100%" src={`http://localhost:5000/${serviceItem?.imageUrl}`} alt='...'></img>
-                                    {/* {console.log(`http://localhost:5000/${serviceItem?.imageUrl}`)} */}
+                                    <img width="100%" src={`https://ssc-final-backend.onrender.com/${serviceItem?.imageUrl}`} alt='...'></img>
+                                    {/* {console.log(`https://ssc-final-backend.onrender.com/${serviceItem?.imageUrl}`)} */}
                                     <div className="card-title">{serviceItem?.title}</div>
                                     <div className="card-description">{serviceItem?.description}</div>
                                 </div>
