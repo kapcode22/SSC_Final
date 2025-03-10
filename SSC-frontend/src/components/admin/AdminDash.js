@@ -22,7 +22,7 @@ const AdminDash = () => {
 
     const fetchSliderImages = async (club) => {
         try {
-            const res = await axios.get(`http://localhost:5000/api/sliderImages/${club}`);
+            const res = await axios.get(`https://ssc-final-backend.onrender.com/api/sliderImages/${club}`);
             setSliderImages(res.data);
         } catch (err) {
             console.error("Error fetching slider images:", err);
@@ -31,7 +31,7 @@ const AdminDash = () => {
 
     const fetchPostHolders = async (club) => {
         try {
-            const res = await axios.get(`http://localhost:5000/api/postholders/${club}`);
+            const res = await axios.get(`https://ssc-final-backend.onrender.com/api/postholders/${club}`);
             setPostHolders(res.data);
         } catch (err) {
             console.error("Error fetching post holders:", err);
@@ -40,7 +40,7 @@ const AdminDash = () => {
 
     const fetchEvents = async (club) => {
         try {
-            const res = await axios.get(`http://localhost:5000/api/events/${club}`);
+            const res = await axios.get(`https://ssc-final-backend.onrender.com/api/events/${club}`);
             setEvents(res.data);
         } catch (err) {
             console.error("Error fetching events:", err);
@@ -49,7 +49,7 @@ const AdminDash = () => {
 
     const handleDeleteSliderImage = async (id) => {
         try {
-            await axios.delete(`http://localhost:5000/api/sliderImages/${selectedClub}/${id}`);
+            await axios.delete(`https://ssc-final-backend.onrender.com/api/sliderImages/${selectedClub}/${id}`);
             fetchSliderImages(selectedClub); // Refresh data
         } catch (err) {
             console.error("Error deleting slider image:", err);
@@ -58,7 +58,7 @@ const AdminDash = () => {
 
     const handleDeletePostHolder = async (id) => {
         try {
-            await axios.delete(`http://localhost:5000/api/postholders/${selectedClub}/${id}`);
+            await axios.delete(`https://ssc-final-backend.onrender.com/api/postholders/${selectedClub}/${id}`);
             fetchPostHolders(selectedClub); // Refresh data
         } catch (err) {
             console.error("Error deleting post holder:", err);
@@ -67,7 +67,7 @@ const AdminDash = () => {
 
     const handleDeleteEvent = async (id) => {
         try {
-            await axios.delete(`http://localhost:5000/api/events/${selectedClub}/${id}`);
+            await axios.delete(`https://ssc-final-backend.onrender.com/api/events/${selectedClub}/${id}`);
             fetchEvents(selectedClub); // Refresh data
         } catch (err) {
             console.error("Error deleting event:", err);
