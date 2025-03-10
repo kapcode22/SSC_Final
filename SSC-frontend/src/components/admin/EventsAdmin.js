@@ -29,10 +29,10 @@ const EventsAdmin = () => {
         }
 
         const endpoints = {
-            spc: 'http://localhost:5000/api/events/spc',
-            ku: 'http://localhost:5000/api/events/ku',
-            hhc: 'http://localhost:5000/api/events/hhc',
-            sahyog: 'http://localhost:5000/api/events/sahyog',
+            spc: 'https://ssc-final-backend.onrender.com/api/events/spc',
+            ku: 'https://ssc-final-backend.onrender.com/api/events/ku',
+            hhc: 'https://ssc-final-backend.onrender.com/api/events/hhc',
+            sahyog: 'https://ssc-final-backend.onrender.com/api/events/sahyog',
         };
 
         const endpoint = endpoints[values.club];
