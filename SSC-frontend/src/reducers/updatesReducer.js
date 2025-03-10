@@ -8,7 +8,7 @@ import axios from "axios";
 export const getUpdates=()=>{
    return async(dispatch)=>{
       dispatch({type:'GET_UPDATES'})
-      const response= await axios.get('http://localhost:5000/api/services')
+      const response= await axios.get('https://ssc-final-backend.onrender.com/api/services')
       if(response){
          dispatch({type:'GET_UPDATES_COMPLETED',payload:response.data.data})
       }
