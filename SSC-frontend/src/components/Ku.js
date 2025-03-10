@@ -27,7 +27,7 @@ const Ku = () => {
 
   const fetchCarouselImages = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/sliderImages/ku');
+      const response = await axios.get('https://ssc-final-backend.onrender.com/api/sliderImages/ku');
       setCarouselImages(response.data); // Assuming response.data is an array of image URLs
     } catch (error) {
       console.error('Error fetching carousel images:', error);
@@ -53,7 +53,7 @@ const Ku = () => {
             {carouselImages && carouselImages.length > 0 ? (
               carouselImages.map((carouselImage, index) => (
                 <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
-               <img className={kstyles.carousel_img} src={`http://localhost:5000/${carouselImage.imageUrl.replace(/\\/g, '/')}`} alt="" />
+               <img className={kstyles.carousel_img} src={`https://ssc-final-backend.onrender.com/${carouselImage.imageUrl.replace(/\\/g, '/')}`} alt="" />
                 </div>
               ))
             ) : (
@@ -106,7 +106,7 @@ const Ku = () => {
                 </button>
               </div>
             </div>
-            <img className={kstyles.img_ani} src={`http://localhost:5000/${event.image.replace(/\\/g, '/')}`} alt={`${event.title} image`} />
+            <img className={kstyles.img_ani} src={`https://ssc-final-backend.onrender.com/${event.image.replace(/\\/g, '/')}`} alt={`${event.title} image`} />
             <div className={kstyles.date}></div>
           </div>
         ))}
@@ -118,7 +118,7 @@ const Ku = () => {
           {team.map((member, index) => (
             <div className={kstyles.profile_card} key={index}>
               <div className={kstyles.img}>
-                <img src={`http://localhost:5000/${member.image.replace(/\\/g, '/')}`} alt={`${member.name}'s profile`} />
+                <img src={`https://ssc-final-backend.onrender.com/${member.image.replace(/\\/g, '/')}`} alt={`${member.name}'s profile`} />
               </div>
               <div className={kstyles.caption}>
                 <h3>{member.name}</h3>
