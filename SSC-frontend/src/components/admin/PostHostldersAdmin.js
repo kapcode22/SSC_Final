@@ -32,11 +32,11 @@ const PostHoldersAdmin = () => {
         }
 
         const endpoints = {
-            spc: 'http://localhost:5000/api/postHolders/spc',
-            ku: 'http://localhost:5000/api/postHolders/ku',
-            hhc: 'http://localhost:5000/api/postHolders/hhc',
-            sahyog: 'http://localhost:5000/api/postHolders/sahyog',
-            council: 'http://localhost:5000/api/postHolders/council'
+            spc: 'https://ssc-final-backend.onrender.com/api/postHolders/spc',
+            ku: 'https://ssc-final-backend.onrender.com/api/postHolders/ku',
+            hhc: 'https://ssc-final-backend.onrender.com/api/postHolders/hhc',
+            sahyog: 'https://ssc-final-backend.onrender.com/api/postHolders/sahyog',
+            council: 'https://ssc-final-backend.onrender.com/api/postHolders/council'
         };
 
         const endpoint = endpoints[values.club];
