@@ -17,7 +17,7 @@ const LoginAdmin = () => {
         const adminData = { username, password };
 
         try {
-            const res = await axios.post('http://localhost:5000/admin/login', adminData, {
+            const res = await axios.post('https://ssc-final-backend.onrender.com/admin/login', adminData, {
                 withCredentials: true,  // ✅ Ensure credentials are sent
             });
 
