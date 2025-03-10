@@ -3,7 +3,7 @@ import axios from 'axios';
 export const fetchTeam = () => async (dispatch) => {
   dispatch({ type: 'FETCH_TEAM_REQUEST' });
   try {
-    const res = await axios.get('http://localhost:5000/api/postHolders/hhc');
+    const res = await axios.get('https://ssc-final-backend.onrender.com/api/postHolders/hhc');
     dispatch({ type: 'FETCH_TEAM_SUCCESS', payload: res.data });
   } catch (err) {
     dispatch({ type: 'FETCH_TEAM_FAILURE', payload: err.message });
@@ -13,7 +13,7 @@ export const fetchTeam = () => async (dispatch) => {
 export const fetchEvents = () => async (dispatch) => {
   dispatch({ type: 'FETCH_EVENTS_REQUEST' });
   try {
-    const res = await axios.get('http://localhost:5000/api/events/hhc');
+    const res = await axios.get('https://ssc-final-backend.onrender.com/api/events/hhc');
     dispatch({ type: 'FETCH_EVENTS_SUCCESS', payload: res.data });
   } catch (err) {
     dispatch({ type: 'FETCH_EVENTS_FAILURE', payload: err.message });
