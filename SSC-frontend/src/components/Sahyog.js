@@ -25,7 +25,7 @@ const Sahyog = () => {
 
   const fetchCarouselImages = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/sliderImages/sahyog');
+      const response = await axios.get('https://ssc-final-backend.onrender.com/api/sliderImages/sahyog');
       console.log('Fetched carousel images:', response.data); // Debug log
       setCarouselImages(response.data); // Assuming response.data is an array of image URLs
     } catch (error) {
@@ -52,7 +52,7 @@ const Sahyog = () => {
             {carouselImages && carouselImages.length > 0 ? (
               carouselImages.map((carouselimage, index) => (
                 <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
-                  <img   className="carousel_img" src={`http://localhost:5000/${carouselimage.imageUrl.replace(/\\/g, '/')}`} alt={`Carousel ${index}`} />
+                  <img   className="carousel_img" src={`https://ssc-final-backend.onrender.com/${carouselimage.imageUrl.replace(/\\/g, '/')}`} alt={`Carousel ${index}`} />
                 </div>
               ))
             ) : (
@@ -120,7 +120,7 @@ const Sahyog = () => {
                   </button>
                 </div>
               </div>
-              <img className={sstyles.img_ani} src={`http://localhost:5000/${event.image.replace(/\\/g, '/')}`} alt={event.title} />
+              <img className={sstyles.img_ani} src={`https://ssc-final-backend.onrender.com/${event.image.replace(/\\/g, '/')}`} alt={event.title} />
               <div className={sstyles.date}></div>
             </div>
           ))
@@ -137,7 +137,7 @@ const Sahyog = () => {
             team.map((member, index) => (
               <div className={sstyles.profile_card} key={index}>
                 <div className={sstyles.img}>
-                  <img src={`http://localhost:5000/${member.image.replace(/\\/g, '/')}`} alt={member.name} />
+                  <img src={`https://ssc-final-backend.onrender.com/${member.image.replace(/\\/g, '/')}`} alt={member.name} />
                 </div>
                 <div className={sstyles.caption}>
                   <h3>{member.name}</h3>
