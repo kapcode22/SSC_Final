@@ -38,7 +38,7 @@ export default function App() {
     const fetchUser = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/admin/getsingleadmin", // Replace with the correct endpoint
+          "https://ssc-final-backend.onrender.com/api/admin/getsingleadmin", // Replace with the correct endpoint
           {
             withCredentials: true,
           }
