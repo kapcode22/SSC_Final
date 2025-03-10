@@ -1,5 +1,5 @@
 .registrationForm {
-  background-image: url('D:\SSC_copy\SSC-frontend\src\images\home.jpg'); /* Replace with your image URL */
+  background-image: url('../images/home.jpg'); /* Replace with your image URL */
   background-size: cover; /* Ensure the background image covers the entire form */
   background-position: center; /* Center the background image */
   background-repeat: no-repeat; /* Prevent repeating the background image *//* White with 80% opacity */
