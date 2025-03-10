@@ -17,7 +17,7 @@ const Team = () => {
  
    const fetchData = async () => {
      try {
-       const res = await axios.get('http://localhost:5000/api/postholders/council', {
+       const res = await axios.get('https://ssc-final-backend.onrender.com/api/postholders/council', {
          headers: {
            'authorization': localStorage.getItem('token')
          }
@@ -76,7 +76,7 @@ const Team = () => {
           {team.map((member, index) => (
             <div className={tstyle.profile_card} key={index}>
               <div className={tstyle.img}>
-                              <img src={`http://localhost:5000/${member.image}`} alt={member.name} />
+                              <img src={`https://ssc-final-backend.onrender.com/${member.image}`} alt={member.name} />
               </div>
               <div className={tstyle.caption}>
                 <h3>{member.name}</h3>
