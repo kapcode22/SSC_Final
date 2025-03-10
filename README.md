@@ -32,10 +32,11 @@ STRIPE_SECRET_KEY=______
 ![Clubs](SSC_Images/Clubs.png)
 ![Events&Activity](SSC_Images/Events&Activitites.png)
 ![Donate_US](SSC_Images/donation.png)
-![Updates(SSC_Images/updates.png)
+![Updates](SSC_Images/updates.png)
 ![Team](SSC_Images/Team.png)
 
 # Admin -section:-
 ![Login Admin](SSC_Images/Login_ADMIn.png)
+![Admin Dashboard](SSC_Images/DashBoard.png)
 ![Add Admin](SSC_Images/Admin(1).png)
 ![Add Events](SSC_Images/Admin(2).png)
