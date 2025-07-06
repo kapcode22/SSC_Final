@@ -1,4 +1,5 @@
-# SSC_IITBHU
+# SSC_IITBHU 
+# Live Link :- https://ssc-final-frontend.onrender.com/
 We have developed a website that serves as a comprehensive platform for all social activities and events at IIT BHU. This platform not only organizes information about our initiatives but also keeps everyone informed about upcoming events, ongoing projects, and recent achievements. By bringing all our social efforts together in one place, we aim to streamline communication, enhance transparency, and make it easier for students, faculty, and the local community to participate and contribute.
 
 # Features:
